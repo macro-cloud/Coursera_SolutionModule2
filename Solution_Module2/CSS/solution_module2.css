@@ -1,0 +1,98 @@
+*{
+	box-sizing: border-box;
+	
+}
+
+body{
+	background-color: lightblue;
+	margin: 0;
+	padding: 0;
+}
+
+h1{
+	margin-bottom: 50px;
+	text-align: center;
+	text-decoration: underline;
+	color: darkblue;
+}
+
+.container1, .container2, .container3{
+	background-color: grey;
+	border: 2px solid black;
+	margin: 10px;
+}
+
+.title1, .title2, .title3{
+	margin-top: 0;
+	margin-bottom: 10px;
+	height: 30px;
+	width: 200px;
+	font-size: 20px;
+	font-family: 'Trebuchet MS', 'Liberation Sans', 'Nimbus Sans L', sans-serif;
+	border: 2px solid black;
+	text-align: center;
+	float: right;
+
+}
+
+.title1{
+	background-color: pink;
+}
+
+.title2{
+	background-color: rgb(177,0,0);
+	color: white;
+}
+
+.title3{
+	background-color: yellow;
+}
+
+
+.row{
+
+	width:100%;
+}
+
+p{
+	margin: 5px;
+	width: 98%;
+	clear: right;
+	font-family: 'Trebuchet MS', 'Liberation Sans', 'Nimbus Sans L', sans-serif;
+}
+
+
+
+
+@media (min-width: 991px) {
+	.container1, .container2, .container3{
+		float: left;
+		width: 31%;
+	}
+
+	
+
+}
+
+
+@media (min-width: 768px) and (max-width: 990px) {
+    .container1, .container2, .col-md-6{
+		float: left;
+		width: 44.5%;
+	}
+
+	.container3{
+		float: left;		
+		width: 92%;
+	}
+	p{
+
+	}
+}
+
+@media (max-width: 767px) {
+	.container1, .container2, .container3{
+		float: left;
+		width: 90%;
+	}
+}
